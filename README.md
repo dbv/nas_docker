@@ -8,3 +8,6 @@
 3. frpc穿透代理，模拟quickconnect功能
 4. syncthing多设备同步
 5. jellyfin nas显卡加速局域网多媒体
+
+
+# 欢迎大家提交更多好玩具
