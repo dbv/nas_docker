@@ -7,6 +7,4 @@
 2. samba 挂盘局域网共享
 3. frpc穿透代理，模拟quickconnect功能
 4. syncthing多设备同步
-5. jenlly nas显卡加速局域网多媒体
-
-
+5. jellyfin nas显卡加速局域网多媒体
