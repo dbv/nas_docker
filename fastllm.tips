@@ -1,0 +1,25 @@
+# 单机版本llm大语言模型
+sudo sed -i 's/deb.debian.org/mirrors.ustc.edu.cn/g' /etc/apt/sources.list
+sudo dpkg-reconfigure locales
+sudo apt update
+sudo apt install cmake gcc g++ git
+这里有几条命令，效果一样，哪个速度快用哪个：
+git clone https://ghproxy.com/https://github.com/ztxz16/fastllm.git
+git clone https://github.moeyy.xyz/https://github.com/ztxz16/fastllm.git
+git clone https://kgithub.com/ztxz16/fastllm.git
+git clone https://hub.fgit.gq/ztxz16/fastllm.git
+git clone https://gitclone.com/github.com/ztxz16/fastllm.git
+继续:
+cd fastllm
+mkdir build
+cd build
+有N卡，那么：cmake .. -DUSE_CUDA=ON
+无N卡，那么：cmake .. -DUSE_CUDA=OFF
+然后：
+make -j
+最后，从这个链接下载模型文件：https://huggingface.co/huangyuyang/chatglm2-6b-int4.flm/tree/main
+
+
+按照视频中的操作拷贝
+最后: ./webui -p chatglm2-6b-int4.flm --port 1234 输出一个ip地址，访问它。
+收起
