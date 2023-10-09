@@ -1,7 +1,7 @@
 #!/bin/bash
 # author:xiaohui github.com/dbv/
 docker_name=mysql
-docker_data=/root/docker/mysql/data
+docker_data=$PWD/data
 
 # 可根据配置设置mysql conf、data文件夹映射
 docker run --name $docker_name \
